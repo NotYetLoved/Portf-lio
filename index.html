@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aniceto Bento — Desenvolvedor Back End</title>
+  <meta name="description" content="Portfólio de Aniceto Bento — Desenvolvedor Back End. APIs REST, microsserviços, Node.js, C#, PostgreSQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="container header">
+    <nav class="nav">
+      <a href="#" class="brand" aria-label="Início">
+        <span class="logo-cube" aria-hidden="true"></span>
+        <span>Aniceto Bento</span>
+      </a>
+      <div class="nav-actions">
+        <button id="scrollAbout" class="btn ghost">Sobre</button>
+        <button id="scrollSkills" class="btn ghost">Habilidades</button>
+        <button id="scrollProjects" class="btn ghost">Projetos</button>
+        <button id="scrollContact" class="btn primary">Contato</button>
+        <button id="themeToggle" class="btn icon" aria-label="Alternar tema">
+          <span class="icon-sun" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero" id="sobre">
+      <div class="hero-text">
+        <h1 class="title">Desenvolvedor Back End</h1>
+        <p class="subtitle">
+          Sou Desenvolvedor Back End com 3 anos de experiência em APIs REST e microserviços,
+          atuando com Node.js e PostgreSQL. Tenho paixão por criar sistemas escaláveis e seguros,
+          sempre buscando otimizar processos para alcançar alta performance. Gosto de enfrentar
+          desafios que envolvam resolver problemas complexos e vejo em cada projeto uma chance
+          de aprender mais e contribuir com soluções que realmente façam diferença.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projetos">Ver Projetos</a>
+          <a class="btn outline" id="copyEmail" href="mailtopreencher@email.com">Enviar E‑mail</a>
+          <a class="btn outline" target="_blank" rel="noreferrer" href="https://wa.me/+5585985514099">WhatsApp</a>
+        </div>
+        <ul class="quick-facts">
+          <li><span class="dot"></span> Node.js • C# • PHP • Python • HTML • C++ • Java (NetBeans)</li>
+          <li><span class="dot"></span> PostgreSQL • MySQL • Git • Docker</li>
+          <li><span class="dot"></span> APIs REST • Microsserviços • Sistemas escaláveis • Agile • Scrum</li>
+        </ul>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/foto-aniceto.jpg" alt="Foto de Aniceto Bento sentado em um sofá" />
+        <div class="photo-glow" aria-hidden="true"></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="container skills" id="habilidades">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+
+      <div class="chips">
+        <div class="chip">Node.js</div>
+        <div class="chip">C#</div>
+        <div class="chip">PHP</div>
+        <div class="chip">Python</div>
+        <div class="chip">HTML</div>
+        <div class="chip">C++</div>
+        <div class="chip">Java (NetBeans)</div>
+        <div class="chip">PostgreSQL</div>
+        <div class="chip">MySQL</div>
+        <div class="chip">Git</div>
+        <div class="chip">Docker</div>
+        <div class="chip">APIs REST</div>
+        <div class="chip">Microsserviços</div>
+        <div class="chip">Sistemas Escaláveis</div>
+        <div class="chip">Agile</div>
+        <div class="chip">Scrum</div>
+      </div>
+    </section>
+
+    <section class="container projects" id="projetos">
+      <div class="section-head">
+        <h2 class="section-title">Projetos</h2>
+        <div class="filters">
+          <button class="btn tiny is-active" data-filter="all">Todos</button>
+          <button class="btn tiny" data-filter="node">Node.js</button>
+          <button class="btn tiny" data-filter="csharp">C#</button>
+          <button class="btn tiny" data-filter="php">PHP</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Projeto 1 -->
+        <article class="card project" data-tags="node csharp">
+          <div class="card-head">
+            <h3>API de Integração Mercado‑Trabalho</h3>
+            <span class="badge">Destaque</span>
+          </div>
+          <p class="card-text">
+            API que conecta universidades e empresas parceiras para integrar recém‑graduados ao mercado.
+            Cadastra cursos, alunos e vagas; autenticação JWT; consultas por habilidades; notificações e
+            documentação REST para integração com terceiros.
+          </p>
+          <ul class="tags">
+            <li>Node.js</li><li>C#</li><li>PostgreSQL</li><li>Docker</li><li>Microsserviços</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn primary" data-modal="modal1">Ver detalhes</button>
+            <button class="btn outline" data-openapi="openapi1">Ver API Spec</button>
+            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Repositório</a>
+          </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="card project" data-tags="node php">
+          <div class="card-head">
+            <h3>Sistema de Gestão de Estoque</h3>
+          </div>
+          <p class="card-text">
+            Sistema para PMEs com cadastros, controle de entradas/saídas, níveis de permissão,
+            relatórios CSV e integração com banco SQL.
+          </p>
+          <ul class="tags">
+            <li>Node.js</li><li>PHP</li><li>MySQL</li><li>APIs REST</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn primary" data-modal="modal2">Ver detalhes</button>
+            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Repositório</a>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="card project" data-tags="csharp node">
+          <div class="card-head">
+            <h3>Plataforma de Feedback Acadêmico</h3>
+          </div>
+          <p class="card-text">
+            Coleta e análise de avaliações de disciplinas/professores com anonimato opcional,
+            dashboards e integração com portais acadêmicos.
+          </p>
+          <ul class="tags">
+            <li>C#</li><li>Node.js</li><li>PostgreSQL</li><li>Docker</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn primary" data-modal="modal3">Ver detalhes</button>
+            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Repositório</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container contact" id="contato">
+      <h2 class="section-title">Contato</h2>
+      <div class="contact-grid">
+        <div class="card glass">
+          <h3>Fale comigo</h3>
+          <p>E‑mail: <a id="emailLink" href="mailto:preencher@email.com">anicetosalakiaku@gmail.com</a></p>
+          <p>WhatsApp: <a target="_blank" rel="noreferrer" href="https://wa.me/0000000000000">+55 (85) 98551‑4099</a></p>
+          <div class="card-actions">
+            <button id="btnCopy" class="btn outline">Copiar e‑mail</button>
+            <a class="btn primary" href="mailto:preencher@email.com?subject=Contato%20do%20Portf%C3%B3lio">Enviar e‑mail</a>
+          </div>
+        </div>
+        <div class="card glass">
+          <h3>Links</h3>
+          <ul class="links">
+            <li><a href="#" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Currículo (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aniceto Bento — Desenvolvedor Back End</p>
+    </div>
+  </footer>
+
+  <!-- Modais de projeto -->
+  <dialog id="modal1" class="modal">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <h3>API de Integração Mercado‑Trabalho</h3>
+      <p><strong>Descrição:</strong> Intermedia universidades e empresas para conectar graduados a vagas. Inclui cadastros (cursos, alunos, vagas), autenticação JWT, filtros por habilidades e documentação REST.</p>
+      <p><strong>Tecnologias:</strong> Node.js, C#, PostgreSQL, Docker — arquitetura de microsserviços.</p>
+      <ul class="bullets">
+        <li>Autenticação/autorização por perfis (universidades, empresas, admin).</li>
+        <li>Consulta de candidatos por curso, habilidades e disponibilidade.</li>
+        <li>Notificações automáticas entre parceiros e trilhas de auditoria.</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog id="modal2" class="modal">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <h3>Sistema de Gestão de Estoque</h3>
+      <p><strong>Descrição:</strong> Controle de produtos, fornecedores e movimentações, com relatórios e permissões por nível de usuário.</p>
+      <p><strong>Tecnologias:</strong> Node.js, PHP, MySQL — APIs REST.</p>
+    </div>
+  </dialog>
+
+  <dialog id="modal3" class="modal">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <h3>Plataforma de Feedback Acadêmico</h3>
+      <p><strong>Descrição:</strong> Coleta e análise de feedback de alunos sobre disciplinas e professores, com anonimato opcional.</p>
+      <p><strong>Tecnologias:</strong> C#, Node.js, PostgreSQL, Docker.</p>
+    </div>
+  </dialog>
+
+  <!-- OpenAPI viewer (leve, inline) -->
+  <dialog id="openapi1" class="modal modal-wide">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <h3>Especificação OpenAPI — Integração Mercado‑Trabalho</h3>
+      <pre class="code"><code>openapi: 3.0.3
+info:
+  title: Integrador Mercado-Trabalho
+  version: 1.0.0
+paths:
+  /auth/login:
+    post:
+      summary: Login com JWT
+  /universidades:
+    get:
+      summary: Listar universidades
+    post:
+      summary: Cadastrar universidade
+  /empresas:
+    get:
+      summary: Listar empresas
+    post:
+      summary: Cadastrar empresa
+  /vagas:
+    get:
+      summary: Listar vagas com filtros
+    post:
+      summary: Cadastrar vaga
+  /candidatos:
+    get:
+      summary: Listar candidatos por curso/habilidade
+      </code></pre>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
